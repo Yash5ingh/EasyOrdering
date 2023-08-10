@@ -6,5 +6,6 @@ if(isset($_GET['tb']))
     header('Location: ordering.php?tb='.$table);
 }
 else{
-    echo "Scan a QR code";
+    echo "<script>alert('Scan the QR code on your table')</script>";
+    exit();
 }
